@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Chris John",
+    "job": "Personal Trainer",
+    "image":"/images/Trainers/chris-john.jpg",
+    "facebook": "#",
+    "instagram": "#",
+    "linkedin": "#"
+  },
+  {
+    "name": "Harry",
+    "job": "Yoga Instructor",
+    "image":"https://cerqular.com/cdn/shop/products/flat-lay.png",
+    "facebook": "#",
+    "instagram": "#",
+    "linkedin": "#"
+  },
+  {
+    "name": "Blessy",
+    "job": "Female body Trainer",
+    "image":"https://cdn-cbpon.nitrocdn.com/CZHVXYFoToXfphZaopLkYypztRvvBldz/assets/images/optimized/rev-79a36d0/www.fitnessmentors.com/wp-content/uploads/2022/05/attractive-sports-girl-personal-trainer-middle-modern-gym-with-workout-plan-her-hands-1024x683.jpg",
+    "facebook": "#",
+    "instagram": "#",
+    "linkedin": "#"
+  },
+  {
+    "name": "Methew",
+    "job": "Fitness Director",
+    "image":"https://img.freepik.com/premium-photo/personal-trainer-using-tablet_746318-4397.jpg",
+    "facebook": "#",
+    "instagram": "#",
+    "linkedin": "#"
+  }
+]

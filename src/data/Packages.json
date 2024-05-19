@@ -1,0 +1,38 @@
+[
+  {
+    "packageName": "Standard",
+    "image": "https://educatefitness.co.uk/wp-content/uploads/2023/06/Starting-Your-Self-Employed-Personal-Training-Business-1.jpg",
+    "price": "1500",
+    "duration": "Month",
+    "banefits": [
+      "6 Days a Week",
+      "Personal Trainer",
+      "Diet Plan Included",
+      "Morning & Evening Batches"
+    ]
+  },
+  {
+    "packageName": "Gold",
+    "image":"https://img.freepik.com/free-photo/stylish-guy-gym-relaxing-floor-eating-healthy-food_78826-2817.jpg",
+    "price": "6000",
+    "duration": "6 months",
+    "banefits": [
+      "6 Days a Week",
+      "Personal Trainer",
+      "Diet Plan Included",
+      "Morning & Evening Batches"
+    ]
+  },
+  {
+    "packageName": "Premium",
+    "image":"https://www.circle8massage.co.uk/wp-content/uploads/2023/02/Essential-Questions-to-Ask-Your-Personal-Trainer.jpg.webp",
+    "price": "9000",
+    "duration": "Year",
+    "banefits": [
+      "6 Days a Week",
+      "Personal Trainer",
+      "Diet Plan Included",
+      "Morning & Evening Batches"
+    ]
+  }
+]
