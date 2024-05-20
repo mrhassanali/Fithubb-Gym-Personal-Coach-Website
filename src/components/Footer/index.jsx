@@ -6,10 +6,15 @@ import Logo from "../../assets/images/logo.png";
 export default function Footer() {
   return (
     <>
-      <Section className={"mt-5 bg-[#1A1A1A]"}>
+      <div className="bg-slate-100 p-8 w-full"></div>
+      <Section
+        className={
+          "pt-8 pb-6 custom-bg-black-layer-footer relative bg-[url('https://img.freepik.com/premium-photo/cinematic-shot-interior-empty-gym_970826-155.jpg')] bg-no-repeat bg-center bg-cover"
+        }
+      >
         <Container>
           <div className="grid lg:grid-cols-6 large:grid-cols-4 md:grid-cols-4 sm:grid-cols-2 xs:gri-cols-1 gap-1 mt-6 mb-4">
-            <div className="md:col-span-2 pt-3 px-5">
+            <div className="z-50 md:col-span-2 pt-3 px-5">
               <div className="md:text-xl xs:text-lg text-slate-200 font-fira-sans font-semibold inline-flex items-center">
                 <img src={Logo} alt="Logo" className="w-12 h-12" />
                 Fit<span className="text-red-500">hubb</span>
@@ -19,7 +24,7 @@ export default function Footer() {
                 and social media links based on the specific detail of your gym.
               </p>
             </div>
-            <div className="pt-3 px-5">
+            <div className="z-50 pt-3 px-5">
               <div className="md:text-xl xs:text-lg text-slate-200 font-fira-sans font-semibold uppercase">
                 My Account
               </div>
@@ -31,7 +36,7 @@ export default function Footer() {
                 <li>Information</li>
               </ul>
             </div>
-            <div className="pt-3 px-5">
+            <div className="z-50 pt-3 px-5">
               <div className="md:text-xl xs:text-lg text-slate-200 font-fira-sans font-semibold uppercase">
                 Top Links
               </div>
@@ -44,7 +49,7 @@ export default function Footer() {
                 <li>Contact Us</li>
               </ul>
             </div>
-            <div className="md:col-span-2 pt-3 px-5">
+            <div className="z-50 md:col-span-2 pt-3 px-5">
               <div className="md:text-xl xs:text-lg text-slate-200 font-fira-sans font-semibold uppercase">
                 Address
               </div>

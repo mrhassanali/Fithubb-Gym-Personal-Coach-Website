@@ -32,11 +32,11 @@ export default function BMICalculator() {
                   placeholder="Weight"
                   className="p-2 font-fira-sans w-2/3 text-lg font-semibold text-slate-600 bg-transparent border border-slate-400 rounded-lg"
                 />
-                <div className="inline-flex items-center border border-slate-800 w-1/3 rounded-lg">
-                  <button className="w-1/2 p-2 hover:bg-red-550 hover:text-white uppercase rounded-lg text-xl font-fira-sans font-semibold">
+                <div className="inline-flex items-center border border-slate-800 w-1/3 rounded-lg group">
+                  <button type="button" className="w-1/2 p-2 group-hover:bg-red-550 hover:text-white uppercase rounded-lg text-xl font-fira-sans font-semibold">
                     KG
                   </button>
-                  <button className="w-1/2 p-2 hover:bg-red-550 hover:text-white uppercase rounded-lg text-xl font-fira-sans font-semibold bg-red-550 text-white">
+                  <button type="button" className="w-1/2 p-2 group-hover:bg-red-550 hover:text-white uppercase rounded-lg text-xl font-fira-sans font-semibold bg-red-550 text-white">
                     LB
                   </button>
                 </div>
@@ -49,11 +49,11 @@ export default function BMICalculator() {
                   placeholder="Height in CM"
                   className="p-2 font-fira-sans w-2/3 text-lg font-semibold text-slate-600 bg-transparent border border-slate-400 rounded-lg"
                 />
-                <div className="inline-flex items-center border border-slate-800 w-1/3 rounded-lg">
-                  <button className="w-1/2 p-2 hover:bg-red-550 hover:text-white uppercase rounded-lg text-xl font-fira-sans font-semibold">
+                <div className="inline-flex items-center border border-slate-800 w-1/3 rounded-lg group">
+                  <button type="button" className="w-1/2 p-2 group-hover:bg-red-550 hover:text-white uppercase rounded-lg text-xl font-fira-sans font-semibold">
                     CM
                   </button>
-                  <button className="w-1/2 p-2 hover:bg-red-550 hover:text-white uppercase rounded-lg text-xl font-fira-sans font-semibold bg-red-550 text-white">
+                  <button type="button" className="w-1/2 p-2 group-hover:bg-red-550 hover:text-white uppercase rounded-lg text-xl font-fira-sans font-semibold bg-red-550 text-white">
                     IN
                   </button>
                 </div>

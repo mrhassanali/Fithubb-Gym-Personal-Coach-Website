@@ -63,7 +63,7 @@ export default function Navbar() {
 
       {/* Mobile Menue */}
       {isMobileMenu && (
-        <div className="w-full h-screen absolute top-0 left-0 bg-slate-100 text-black pt-4 flex flex-col">
+        <div className="z-[100] w-full h-[100vh] fixed top-0 left-0 bg-slate-100 text-black pt-4 flex flex-col">
           <div className="w-full inline-flex justify-between items-start">
             <div className="inline-flex items-center gap-x-3 pl-3 mb-4">
               <img src={Logo} alt="Logo" className="w-10 h-10 object-cover" />

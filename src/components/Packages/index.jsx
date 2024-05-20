@@ -12,7 +12,7 @@ export default function Packages() {
     <Section className={"bg-[#1A1A1A] mt-32 mb-10"}>
       <Container className={"mt-32 relative"}>
         <PackagesTopCard />
-        <Container.Heading className={"text-white md:mt-10"}>
+        <Container.Heading className={"text-white md:mt-20 xs:pt-24"}>
           Our Packages
         </Container.Heading>
         <Container.Paragraph className={"text-white"}>
@@ -31,10 +31,10 @@ export default function Packages() {
 
 function PackagesTopCard() {
   return (
-    <div className="w-full lg:w-11/12 text-white bg-red-550 rounded absolute -top-32 left-1/2 -translate-x-1/2 -translate-y-1/2 width-[100%]">
-      <div className="grid large:grid-cols-4 md:grid-cols-3 xs:grid-cols-2  md:p-8 gap-4">
+    <div className="w-full lg:w-11/12 text-white bg-red-550 rounded absolute -top-3 left-1/2 -translate-x-1/2 -translate-y-1/2 width-[100%]">
+      <div className="grid large:grid-cols-4 md:grid-cols-3 xs:grid-cols-2 md:p-8 gap-4">
         <div className="md:border-r inline-flex items-center gap-x-2">
-          <FaceSmileIcon className="w-14 h-14 text-white" />
+          <FaceSmileIcon className="w-12 h-12 text-white" />
           <div>
             <h1 className="text-white font-fira-sans font-bold text-3xl lg:text-3xl xs:text-md">
               546

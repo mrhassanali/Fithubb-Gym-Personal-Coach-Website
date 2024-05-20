@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-bg-black-layer::before,
+.custom-bg-black-layer-package::before,
+.custom-bg-black-layer-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* z-index: -10; */
+}
+
+.custom-bg-black-layer::before {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.custom-bg-black-layer-package::before {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.custom-bg-black-layer-footer::before {
+  background-color: rgba(0, 0, 0, 0.756);
+}

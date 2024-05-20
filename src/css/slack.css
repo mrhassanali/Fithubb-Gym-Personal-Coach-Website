@@ -94,7 +94,7 @@
 .custom-prevArrow,
 .custom-nextArrow {
   position: absolute;
-  z-index: 99999;
+  z-index: 20;
   top: 50%;
 }
 .custom-prevArrow {

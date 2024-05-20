@@ -1,24 +1,22 @@
 import React from "react";
 import { Container, Section } from "../../Atoms";
-import Navbar from "../Navbar";
 import { PlayIcon } from "@heroicons/react/16/solid";
 import TriangleImg from "../../assets/images/triangle-svgrepo-com.png";
 import MenImg from "../../assets/images/men-image.png";
-// import barChartImg from "../../assets/images/bar-chart-4-xxl.png";
-// import { HeartIcon } from "@heroicons/react/16/solid";
+import barChartImg from "../../assets/images/bar-chart-4-xxl.png";
+import { HeartIcon } from "@heroicons/react/16/solid";
 
 export default function Hero() {
   return (
     <>
-      <Navbar />
       <Section
         className={
-          " bg-[url('https://img.freepik.com/premium-photo/cinematic-shot-interior-empty-gym_970826-155.jpg')] bg-no-repeat bg-center bg-cover "
+          "custom-bg-black-layer relative bg-[url('https://img.freepik.com/premium-photo/cinematic-shot-interior-empty-gym_970826-155.jpg')] bg-no-repeat bg-center bg-cover"
         }
       >
         <Container>
           <div className="flex flex-row justify-between md:flex-row sm:flex-col-reverse xs:flex-col-reverse lg:h-[35rem] md:h-[30rem] sm:h-auto">
-            <div className= "w-1/2 h-full text-white md:w-1/2 sm:w-full xs:w-full">
+            <div className="z-[70] w-1/2 h-full text-white md:w-1/2 sm:w-full xs:w-full">
               <div className="flex flex-col justify-center items-center h-full w-full p-1">
                 <h1 className="text-2xl lg:text-4xl md:text-3xl font-bold uppercase font-fira-sans w-full ">
                   GET HEALTHY BODY <br />
@@ -73,7 +71,7 @@ export default function Hero() {
             </div>
 
             <div
-              className="w-1/2 md:w-1/2 sm:w-full xs:w-full bg-center bg-no-repeat bg-cover"
+              className="z-[70] w-1/2 md:w-1/2 sm:w-full xs:w-full bg-center bg-no-repeat bg-cover"
               style={{ backgroundImage: `url(${TriangleImg})` }}
             >
               <img
@@ -86,8 +84,8 @@ export default function Hero() {
         </Container>
       </Section>
       {/* <Container>
-        <div className="flex flex-row justify-between mt-14 mb-6 gap-x-24">
-          <div className="border border-slate-800 w-1/2 relative">
+        <div className="flex md:flex-row sm:flex-row xs:flex-col justify-between mt-14 mb-6 small:px-6">
+          <div className="border border-slate-800 md:w-1/2 xs:w-full relative">
             <img
               src="https://diversinet.com/wp-content/uploads/2024/04/muscular-sportsman-building-biceps-with-dumbbell_7502-4784.jpg"
               alt="sportsman"
@@ -123,11 +121,11 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="border border-slate-800 w-1/2 p-10">
-            <h1 className="text-5xl font-bold font-fira-sans">
+          <div className="border border-slate-800 md:w-1/2 xs:w-full md:p-10 sm:p-6 xs:p-4">
+            <h1 className="md:text-5xl sm:text-2xl xs:text-lg font-bold font-fira-sans">
               Ready to Make Your Fitness
             </h1>
-            <p className="mt-3 font-fira-sans text-slate-600 text-xl font-medium">
+            <p className="mt-3 font-fira-sans text-slate-600 md:text-xl xs:text-lg font-medium">
               Gym are an essential part of any successful gym. They will help to
               attract new customers members motivated and track achieve their
               goals

@@ -26,8 +26,8 @@ function PopularClassesCard(props) {
   const { title, image, slug, description } = props.item;
 
   return (
-    <div className=" rounded-lg shadow-2xl flex flex-col">
-      <div className="w-full h-44 relative">
+    <div className="rounded-lg shadow-2xl flex flex-col">
+      <div className="w-full h-44 relative custom-bg-black-layer-package">
         <img
           src={image}
           alt={title}

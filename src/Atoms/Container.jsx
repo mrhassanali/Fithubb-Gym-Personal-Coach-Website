@@ -3,7 +3,7 @@ import React from "react";
 function Container({ children, className }) {
   return (
     <div
-      className={`w-full lg:w-11/12 mx-auto p-1 ${className?className:""}`}
+      className={`w-full lg:w-11/12 mx-auto p-1 ${className ? className : ""}`}
     >
       {children}
     </div>
@@ -15,8 +15,8 @@ Container.Heading = function ContainerHeading({ children, className }) {
     <h1
       className={
         className
-          ? `text-center font-fira-sans font-bold text-4xl uppercase ${className}`
-          : "text-center font-fira-sans font-bold text-4xl uppercase"
+          ? `text-center font-fira-sans font-bold md:text-4xl sm:text-3xl xs:text-xl uppercase ${className}`
+          : "text-center font-fira-sans font-bold md:text-4xl sm:text-3xl xs:text-xl uppercase"
       }
     >
       {children}
@@ -29,8 +29,8 @@ Container.SubHeading = function ContainerSubHeading({ children, className }) {
     <h2
       className={
         className
-          ? `text-center font-fira-sans font-bold text-2xl -translate-x-2 uppercase ${className}`
-          : "text-center font-fira-sans font-bold text-2xl -translate-x-2 uppercase"
+          ? `text-center font-fira-sans font-bold md:text-2xl sm:text-xl xs:text-md -translate-x-2 uppercase ${className}`
+          : "text-center font-fira-sans font-bold md:text-2xl sm:text-xl xs:text-md -translate-x-2 uppercase"
       }
     >
       {children}
@@ -43,8 +43,8 @@ Container.Paragraph = function ContainerParagraph({ children, className }) {
     <p
       className={
         className
-          ? `text-xl md:text-lg sm:text-md xs:text-md text-center w-10/12 mx-auto font-fira-sans font-semibold mt-2 mb-2 ${className}`
-          : "text-xl md:text-lg sm:text-md xs:text-md text-center w-10/12 mx-auto font-fira-sans font-semibold mt-2 mb-2"
+          ? `md:text-xl sm:text-md xs:text-md text-center w-10/12 mx-auto font-fira-sans font-semibold mt-2 mb-2 ${className}`
+          : "md:text-xl sm:text-md xs:text-md text-center w-10/12 mx-auto font-fira-sans font-semibold mt-2 mb-2"
       }
     >
       {children}

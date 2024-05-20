@@ -3,8 +3,6 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     fontFamily:{
-      popin:["Poppins", "sans-serif"],
-      inter: ["Inter", "sans-serif"],
       "fira-sans":["Fira Sans", "sans-serif"]
     },
     extend: {

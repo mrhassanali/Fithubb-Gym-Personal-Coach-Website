@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Henry Jacob",
+    "rating": "",
+    "comments": "I recently joined Fithubb, and couldn't be happier with my decision. From the moment I stepped inside, knew this was gym that truly cares about its members’ fitness journey.",
+    "image": "/images/Trainers/chris-john.jpg"
+  },
+
+  {
+    "name": "Jane Smith",
+    "rating": "5",
+    "comments": "Fithubb has exceeded my expectations in every way. The trainers are knowledgeable and supportive, and the variety of classes and equipment ensures that I never get bored with my workouts. I highly recommend this gym to anyone looking to improve their fitness.",
+    "image": "/images/Trainers/chris-john.jpg"
+},
+
+{
+    "name": "Alex Johnson",
+    "rating": "4.5",
+    "comments": "I've tried several gyms in the past, but Fithubb is by far the best. The staff is friendly and helpful, and the facilities are always clean and well-maintained. The personal trainers are top-notch and have helped me achieve my fitness goals faster than I thought possible.",
+    "image": "/images/Trainers/chris-john.jpg"
+},
+
+{
+    "name": "Emily Davis",
+    "rating": "4.8",
+    "comments": "Joining Fithubb was one of the best decisions I've made for my health. The classes are challenging but fun, and the trainers push me to reach new levels of fitness. The community at Fithubb is incredibly supportive, and I've made some great friends along the way.",
+    "image": "/images/Trainers/chris-john.jpg"
+}
+]
