@@ -1,8 +1,5 @@
 ## Gym & Personal Coach Website Design
 - Build the Home Page of Gym & Personal Coach Website Design
-## Design
-
-https://mir-s3-cdn-cf.behance.net/project_modules/1400/76a00b178129979.64e31c24c7871.jpg
 
 ##  Demo
 
