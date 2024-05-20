@@ -2,7 +2,7 @@
 - Build the Home Page of Gym & Personal Coach Website Design
 ## Design
 
-![Gym & Personal Coach Website Design](https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/76a00b178129979.64e31c24c7871.jpg)
+https://mir-s3-cdn-cf.behance.net/project_modules/1400/76a00b178129979.64e31c24c7871.jpg
 
 ##  Demo
 
@@ -56,3 +56,5 @@ Used NPM Packages in the Project
 - [Tailwind CSS](https://tailwindcss.com/docs/installation)
 - [@heroicons/react](https://www.npmjs.com/package/@heroicons/react)
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom)
+
+
