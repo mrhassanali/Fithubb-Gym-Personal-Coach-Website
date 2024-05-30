@@ -120,7 +120,7 @@ function PackagesCard(props) {
           );
         })}
       </ul>
-      <div className="w-full flex justify-center">
+      <div className="w-full flex justify-center my-2">
         <button className="border border-slate-50 p-2 md:text-xl sm:text-lg rounded-lg text-white group-hover:text-red-550 group-hover:bg-white font-fira-sans font-semibold">
           Choose Plan
         </button>
