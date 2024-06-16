@@ -107,6 +107,7 @@ function PackagesCard(props) {
       <h1 className="text-center text-white font-bold font-fira-sans md:text-xl sm:text-lg">
         Rs.{price}/ &nbsp;{duration}
       </h1>
+      
       <ul className="text-white px-4 mt-4 leading-8">
         {banefits.map((item, index) => {
           return (
