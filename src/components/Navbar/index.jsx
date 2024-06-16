@@ -26,7 +26,6 @@ export default function Navbar() {
   const handleMobileMenu = () => setIsMobileMenu(!isMobileMenu);
   let location = useLocation();
   let checkIsActive = `${location.pathname}${location.hash}`;
-  console.log(checkIsActive);
   return (
     <Container className={"relative"}>
       <div className="flex flex-rows justify-between items-center p-4">
