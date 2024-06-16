@@ -27,7 +27,7 @@ export default function BMICalculator() {
 
   const handleCalculateBMI = (e) => {
     e.preventDefault();
-    const { kglb, cmin, gender } = bmi;
+    const { kglb, cmin } = bmi;
     if (metric) {
       // Metric units (weight in kg, height in cm)
       setBMIResult(parseFloat(kglb) / (parseFloat(cmin) / 100) ** 2);

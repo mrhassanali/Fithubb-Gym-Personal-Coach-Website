@@ -9,7 +9,7 @@ import CupOfTea from "../../assets/images/icon/cub-tea.png";
 
 export default function Packages() {
   return (
-    <Section className={"bg-[#1A1A1A] mt-32 mb-10"}>
+    <Section className={"bg-[#1A1A1A] mt-32 mb-10"} id={"shop"}>
       <Container className={"mt-32 relative"}>
         <PackagesTopCard />
         <Container.Heading className={"text-white md:mt-20 xs:pt-24"}>

@@ -11,6 +11,7 @@ export default function Footer() {
         className={
           "pt-8 pb-6 custom-bg-black-layer-footer relative bg-[url('https://img.freepik.com/premium-photo/cinematic-shot-interior-empty-gym_970826-155.jpg')] bg-no-repeat bg-center bg-cover"
         }
+        id={"contact"}
       >
         <Container>
           <div className="grid lg:grid-cols-6 large:grid-cols-4 md:grid-cols-4 sm:grid-cols-2 xs:gri-cols-1 gap-1 mt-6 mb-4">

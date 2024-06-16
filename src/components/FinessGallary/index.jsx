@@ -6,7 +6,10 @@ import FitnessGallery from "../../data/FitnessGallery.json";
 export default function FinessGallary() {
   return (
     <Section
-    className={"mt-10 mb-8 py-8 h-auto bg-[url('https://img.freepik.com/premium-photo/cinematic-shot-interior-empty-gym_970826-155.jpg')] bg-no-repeat bg-center bg-cover"}
+      id="gallery"
+      className={
+        "mt-10 mb-8 py-8 h-auto bg-[url('https://img.freepik.com/premium-photo/cinematic-shot-interior-empty-gym_970826-155.jpg')] bg-no-repeat bg-center bg-cover"
+      }
     >
       <Container>
         <Container.Heading className={"text-white"}>

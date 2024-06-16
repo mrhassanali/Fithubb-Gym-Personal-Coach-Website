@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   MagnifyingGlassIcon,
   ShoppingCartIcon,
@@ -8,23 +8,25 @@ import {
 import Logo from "../../assets/images/nav-logo.png";
 import { Container } from "../../Atoms";
 import { Bars3BottomLeftIcon } from "@heroicons/react/24/outline";
+import clsx from "clsx";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "Gallery", href: "/gallery" },
-  { name: "About Us", href: "/about-us" },
-  { name: "Classes", href: "/program" },
-  { name: "Pages", href: "/pages" },
-  { name: "Shop", href: "/shop" },
-  { name: "Blog", href: "/blog" },
-  { name: "Contact", href: "/contact" },
+  { name: "Gallery", href: "/#gallery" },
+  { name: "About Us", href: "/#about-us" },
+  { name: "Classes", href: "/#program" },
+  { name: "Pages", href: "/#pages" },
+  { name: "Shop", href: "/#shop" },
+  { name: "Blog", href: "/#blog" },
+  { name: "Contact", href: "/#contact" },
 ];
 
 export default function Navbar() {
   const [isMobileMenu, setIsMobileMenu] = useState(false);
-  const handleMobileMenu = () => {
-    setIsMobileMenu(!isMobileMenu);
-  };
+  const handleMobileMenu = () => setIsMobileMenu(!isMobileMenu);
+  let location = useLocation();
+  let checkIsActive = `${location.pathname}${location.hash}`;
+  console.log(checkIsActive);
   return (
     <Container className={"relative"}>
       <div className="flex flex-rows justify-between items-center p-4">
@@ -42,16 +44,33 @@ export default function Navbar() {
           <ul className="inline-flex gap-x-2 md:gap-x-3 lg:gap-x-4 md:inline-flex xmd:hidden sm:hidden xs:hidden">
             {navigation.map((item, index) => (
               <li key={index}>
-                <NavLink
-                  to={item.href}
-                  className={({ isActive }) =>
-                    isActive
-                      ? "text-red-600 font-fira-sans font-medium uppercase lg:text-lg md:text-md sm:text-sm"
-                      : "text-slate-600 font-fira-sans font-medium uppercase lg:text-lg md:text-md sm:text-sm"
-                  }
-                >
-                  {item.name}
-                </NavLink>
+                {item.href.split("").includes("#") ? (
+                  <a
+                    href={item.href}
+                    className={clsx(
+                      "font-fira-sans font-medium uppercase lg:text-lg md:text-md sm:text-sm",
+                      {
+                        "text-red-600": checkIsActive === item.href,
+                        "text-slate-600": !(checkIsActive === item.href),
+                      }
+                    )}
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    to={item.href}
+                    className={clsx(
+                      "font-fira-sans font-medium uppercase lg:text-lg md:text-md sm:text-sm",
+                      {
+                        "text-red-600": checkIsActive === item.href,
+                        "text-slate-600": !(checkIsActive === item.href),
+                      }
+                    )}
+                  >
+                    {item.name}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
@@ -71,22 +90,44 @@ export default function Navbar() {
                 Fit<span className="text-red-500">hubb</span>
               </div>
             </div>
-            <XCircleIcon className="h-6 w-6 mt-1 mr-2 text-black cursor-pointer hover:text-red-550" onClick={handleMobileMenu} />
+            <XCircleIcon
+              className="h-6 w-6 mt-1 mr-2 text-black cursor-pointer hover:text-red-550"
+              onClick={handleMobileMenu}
+            />
           </div>
 
           <ul className="inline-block leading-10 w-full">
             {navigation.map((item, index) => (
               <li key={index} className="border border-b w-full pl-5">
-                <NavLink
-                  to={item.href}
-                  className={({ isActive }) =>
-                    isActive
-                      ? "text-red-600 font-fira-sans font-medium uppercase lg:text-lg md:text-md sm:text-sm"
-                      : "text-slate-600 font-fira-sans font-medium uppercase lg:text-lg md:text-md sm:text-sm"
-                  }
-                >
-                  {item.name}
-                </NavLink>
+                {item.href.split("").includes("#") ? (
+                  <a
+                    href={item.href}
+                    onClick={handleMobileMenu}
+                    className={clsx(
+                      "font-fira-sans font-medium uppercase lg:text-lg md:text-md sm:text-sm",
+                      {
+                        "text-red-600": checkIsActive === item.href,
+                        "text-slate-600": !(checkIsActive === item.href),
+                      }
+                    )}
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    to={item.href}
+                    onClick={handleMobileMenu}
+                    className={clsx(
+                      "font-fira-sans font-medium uppercase lg:text-lg md:text-md sm:text-sm",
+                      {
+                        "text-red-600": checkIsActive === item.href,
+                        "text-slate-600": !(checkIsActive === item.href),
+                      }
+                    )}
+                  >
+                    {item.name}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>

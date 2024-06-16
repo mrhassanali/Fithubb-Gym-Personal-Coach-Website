@@ -1,9 +1,10 @@
 import React from "react";
 
-function Container({ children, className }) {
+function Container({ children, className, ...props }) {
   return (
     <div
       className={`w-full lg:w-11/12 mx-auto p-1 ${className ? className : ""}`}
+      {...props}
     >
       {children}
     </div>

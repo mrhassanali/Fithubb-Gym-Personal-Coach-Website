@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export default function PopularClasses() {
   return (
-    <Container>
+    <Container id={"classes"}>
       <Container.Heading>Popular Classes</Container.Heading>
       <Container.Paragraph className={"text-slate-600"}>
         Gym classes provide well-planned and structured workouts that target

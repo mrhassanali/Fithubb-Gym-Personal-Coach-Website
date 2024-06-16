@@ -3,8 +3,6 @@ import { Container, Section } from "../../Atoms";
 import { PlayIcon } from "@heroicons/react/16/solid";
 import TriangleImg from "../../assets/images/triangle-svgrepo-com.png";
 import MenImg from "../../assets/images/men-image.png";
-import barChartImg from "../../assets/images/bar-chart-4-xxl.png";
-import { HeartIcon } from "@heroicons/react/16/solid";
 
 export default function Hero() {
   return (

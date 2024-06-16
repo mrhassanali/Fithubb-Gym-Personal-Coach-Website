@@ -10,7 +10,7 @@ import { ReactComponent as LinkedinSVG } from "../../assets/svg/linkedin.svg";
 export default function Trainers() {
   return (
     <>
-      <Container className={"mt-8"}>
+      <Container className={"mt-8"} id="about-us">
         <Container.Heading>OUR TRAINERS</Container.Heading>
       </Container>
       <Section>
